@@ -22,7 +22,7 @@ export default function App() {
 
   useEffect(() => {
     setStatus("pending");
-    axios.get("https://randomuser.me/api/?results=500").then(
+    axios.get(`https://randomuser.me/api/?results=5000`).then(
       (response) => {
         let groups = [];
         for (let i = 1; i < 100; i += 10) {
